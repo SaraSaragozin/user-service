@@ -3,8 +3,7 @@ name: Build and Push Docker image
 on:
   push:
     branches:
-      - main  # Cambia 'main' por la rama que uses
-
+      - main 
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/user-service:latest  # Cambia el nombre del servicio según el repositorio
+          tags: ${{ secrets.DOCKER_USERNAME }}/user-service:latest 
