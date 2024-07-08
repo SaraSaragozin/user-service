@@ -10,8 +10,6 @@ The User-Service microservice provides endpoints to manage user data.
 
 - Create a new user
 - Retrieve user information
-- Update user details
-- Delete a user
 
 ## Technologies
 
@@ -35,19 +33,21 @@ Ensure you have the following installed:
 
    ```bash
    git clone [https://github.com/SaraSaragozin/user-service.git](https://github.com/SaraSaragozin/user-service.git)
-   cd user-service
-
+   cd user-service   
+  ```
 **2. Install dependencies:** 
+  ```bash
 npm init -y
 npm install
-
+  ```
+  
 **3. Configuration**
 PORT=8081 or local 3001
 MONGODB_URI=mongodb://localhost:27017/userdb
 
-Bash
+  ```bash
 npm start or node index.js
 The server will start on port 3001 by default
-
+  ```
 API Endpoints
 POST /users: 
